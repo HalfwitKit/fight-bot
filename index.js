@@ -10,6 +10,10 @@ function formatUsername(name) {
     return name.replace(/^@/, '').replace(/\.message$/, '');
 }
 
+app.get('/health', (req, res) => {
+    res.send('OK');
+});
+
 app.get('/fight', (req, res) => {
     let sender = formatUsername(req.query.sender);
     let user = formatUsername(req.query.user);
