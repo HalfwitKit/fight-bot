@@ -4,19 +4,19 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Capitalize usernames nicely (first letter uppercase, rest lowercase)
+// Keep usernames exactly as sent (just remove leading @ or .message)
 function formatUsername(name) {
     if (!name) return '';
-    // Remove leading @ and any .message
-    name = name.replace(/^@/, '').replace(/\.message$/, '');
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    return name.replace(/^@/, '').replace(/\.message$/, '');
 }
 
 app.get('/fight', (req, res) => {
     let sender = formatUsername(req.query.sender);
     let user = formatUsername(req.query.user);
 
-    if (!sender || !user) return res.status(400).send('Missing sender or user');
+    if (!sender || !user) {
+        return res.status(400).send('Missing sender or user');
+    }
 
     const outcomes = [
         `${sender} won by landing a surprise uppercut that sent ${user} into next week.`,
