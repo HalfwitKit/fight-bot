@@ -199,8 +199,8 @@ app.get('/fight', (req, res) => {
 `${sender} lost when ${user} turned on sub-only mode.`,
 `${user} lost when ${sender} turned on sub-only mode.`,
 
-`${sender} won by threatening to leak ${user}’s old clips.`,
-`${user} won by threatening to leak ${sender}’s old clips.`,
+`${sender} won by threatening to leak ${user}s old clips.`,
+`${user} won by threatening to leak ${sender}s old clips.`,
 
 `${sender} lost after ${user} said “clip that” and the pressure got to them.`,
 `${user} lost after ${sender} said “clip that” and the pressure got to them.`,
@@ -214,8 +214,8 @@ app.get('/fight', (req, res) => {
 `${sender} won after ${user} accidentally showed their search history.`,
 `${user} won after ${sender} accidentally showed their search history.`,
 
-`${sender} lost when ${user} said “This is why you’re hardstuck.”`,
-`${user} lost when ${sender} said “This is why you’re hardstuck.”`,
+`${sender} lost when ${user} said “This is why youre hardstuck.”`,
+`${user} lost when ${sender} said “This is why youre hardstuck.”`,
 
 `${sender} won by pulling up the analytics mid-fight.`,
 `${user} won by pulling up the analytics mid-fight.`,
