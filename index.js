@@ -68,7 +68,7 @@ app.get('/fight', (req, res) => {
 `${user} won by using the ultimate “procrastination” move: they did absolutely nothing until ${sender} gave up.`,
 
 `${sender} won by charming ${user} with compliments until they could not fight anymore.`,
-`${user} won by charming ${sender} with compliments until they could not fight anymore.`
+`${user} won by charming ${sender} with compliments until they could not fight anymore.`,
 
 `${sender} won after ${user} got distracted by their own dramatic backstory.`,
 `${user} won after ${sender} got distracted by their own dramatic backstory.`,
